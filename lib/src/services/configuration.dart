@@ -43,11 +43,11 @@ class ConfigService {
 
   String get platform {
     if (Platform.isAndroid) {
-      return 'Android';
+      return 'android';
     } else if (Platform.isFuchsia) {
       return 'Fuchsia';
     } else if (Platform.isIOS) {
-      return 'IOS';
+      return 'ios';
     } else if (Platform.isLinux) {
       return 'Linux';
     } else if (Platform.isMacOS) {
