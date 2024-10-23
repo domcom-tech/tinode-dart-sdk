@@ -17,7 +17,7 @@ class PrettyLogger {
 
   void _log(Level level, dynamic message,
       [dynamic error, StackTrace? stackTrace]) {
-    _logger.log(level, message, error, stackTrace);
+    _logger.log(level, message, error: error, stackTrace: stackTrace);
   }
 
   /// Log a message at level [Level.verbose].
