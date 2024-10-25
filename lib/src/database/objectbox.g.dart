@@ -272,7 +272,7 @@ ModelDefinition getObjectBoxModel() {
               store,
               RelInfo<DataMessage>.toOneBacklink(14, object.id,
                   (DataMessage srcObject) => srcObject.localTopic),
-              store.box<LocalTopic>());
+              );
           return object;
         })
   };
