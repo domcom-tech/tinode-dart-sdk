@@ -53,7 +53,7 @@ class ConnectionService {
     try {
       _connecting = true;
       _ws = await WebSocket.connect(Tools.makeBaseURL(_options))
-          .timeout(Duration(milliseconds: 5000));
+          .timeout(Duration(milliseconds: 15000));
       _ws!.pingInterval = Duration(seconds: 20);
       _connecting = false;
       _channel = IOWebSocketChannel(_ws!);
