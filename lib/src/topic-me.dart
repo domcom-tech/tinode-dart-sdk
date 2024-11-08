@@ -431,6 +431,10 @@ class TopicMe extends Topic {
     return _contacts[topicName];
   }
 
+  void removeContact(String topicName) {
+    _contacts.remove(topicName);
+  }
+
   /// Get access mode of a given contact from cache
   AccessMode? getContactAccessMode(String? topicName) {
     if (topicName != null && topicName.isNotEmpty) {
