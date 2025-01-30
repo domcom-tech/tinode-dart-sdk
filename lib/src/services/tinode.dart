@@ -173,7 +173,7 @@ class TinodeService {
       return;
     }
 
-    Topic? topic = _cacheManager.get('topic', info.topic ?? '');
+    Topic? topic = _cacheManager.get('topic', info.topic ?? 'me');
     if (topic != null) {
       topic.routeInfo(info);
     }
